@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Alfredo Esing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="contact-page">
+
+    <a href="index.html" class="return-btn">✕</a>  
+        
+    <main class="main-content">
+        <section>
+                <div class="bento top-bento">
+                    <div>
+                        <div class="page-header">
+                            <h1>Let’s build something functional</h1>
+                        </div>
+                        <p>
+                            Whether you’re looking to scale a design system, or discuss design and code, I’m ready to collaborate.
+                        </p>
+                    </div>
+                </div>
+        </section>
+
+        <section>
+                <div class="bento bottom-bento contact-form-container">
+                    <form id="portfolio-contact-form" action="https://formsubmit.co/alfredo.esing@gmail.com" method="POST">
+                        
+                        <input type="text" name="_honey" style="display:none">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name-field">Name</label>
+                                <input type="text" id="name-field" name="Name" placeholder="Your name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email-field">Email Address</label>
+                                <input type="email" id="email-field" name="Email" placeholder="Your email address" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row" style="margin-top: 1rem;">
+                            <div class="form-group">
+                                <label for="company-field">Company</label>
+                                <input type="text" id="company-field" name="Company" placeholder="Where are you reaching out from?">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" style="margin-top: 1rem;">
+                            <label for="message-field">Message</label>
+                            <textarea id="message-field" name="Message" placeholder="Let’s discuss the brief. How can I help you build?" rows="5" maxlength="5000" required></textarea>
+                        </div>
+
+                        <input type="hidden" name="_next" value="https://perspectivelayout.com">
+
+                        <button type="submit" class="cta-button">Start Conversation</button>
+                    </form>
+                </div>
+        </section>
+
+        <footer>
+                <p class="footer-text">&copy; 2026 Alfredo Esing. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
