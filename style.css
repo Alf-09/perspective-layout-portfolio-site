@@ -80,6 +80,11 @@ p {
     border-bottom: 1px solid var(--primary-blue);   
 }
 
+.folio-name {
+    align-items: center;
+  
+}
+
 .page-header {
     display: flex;
     align-items: center;
@@ -89,8 +94,8 @@ p {
 }
 
 .site-logo {
-    width: 45px;
-    margin-right: 16px;
+    width: 15px;
+    margin-right: 6px;
 }
 
 .page-title {
@@ -109,8 +114,8 @@ a:hover {
 }
 
 .main-content {
-    max-width: 1000px;         
-    min-width: 400px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 60px 20px;
 }
@@ -745,18 +750,31 @@ footer {
     color: #C586C0;
 }
 
-
-
-
 /* Mobile Responsiveness */
 
 @media (max-width: 768px) {
+
     .bento-grid {
         grid-template-columns: 1fr;
     }
-    .project-hero, .wide-short {
+    
+    .project-hero, .wide-short, .project-feature {
         grid-column: span 1;
     }
+    
+    /* FIX: Scales down card heights so images look beautiful and proportional on a mobile screen */
+    .project-feature {
+        height: 300px;
+    }
+    
+    .projects {
+        height: 220px;
+    }
+
+    .brand-name {
+        font-size: 2.5rem;
+    }
+
     .brand-name {
         font-size: 2.5rem;
     }
