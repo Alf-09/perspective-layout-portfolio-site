@@ -774,7 +774,7 @@ footer {
     .project-hero, 
     .wide-short, 
     .project-feature {
-        grid-column: 1;
+        grid-column: 1fr;
     }
 
     
