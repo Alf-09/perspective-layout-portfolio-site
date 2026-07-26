@@ -46,10 +46,7 @@ p {
     font-weight: 200;
     font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 8px;
-}
-
-.paragraph-copy {
+    margin-bottom: 20px;
     text-align: justify;
 }
 
@@ -284,6 +281,10 @@ footer {
     transition: all 0.3s ease;
 }
 
+.project-text p {
+    margin-bottom: 5px;
+}
+
 /* Project Bentos */
 .project-feature {
     grid-column: span 2;
@@ -336,9 +337,6 @@ footer {
 
 /* Resume Page */
 
-.resume-page p { 
-    text-align: justify;
-}
 
 .cert-grid {
     display: grid;
@@ -592,7 +590,7 @@ footer {
 /* project page */
 .role-sub {
     font-size: 1.5rem;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--primary-blue);
     opacity: 0.7;
     margin-top: 6px;
@@ -605,7 +603,7 @@ footer {
     align-items: flex-start;
     gap: 30px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .meta-item {
@@ -641,8 +639,24 @@ footer {
     
 }
 
-.text-block {
-    padding-bottom: 20px;
+.feature-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background: var(--primary-blue);
+    color: var(--white);
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+
+.media-block {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 10px;
 }
 
 .split-media-block {
@@ -651,8 +665,7 @@ footer {
 }
 
 .split-text-block {
-    flex: 1; 
-    text-align: left;
+    flex: 1; ;
 }
 
 .split-text-block p:last-child {
@@ -671,6 +684,7 @@ footer {
     object-fit: contain;   
     display: block;
     object-fit: contain;
+    margin-top: 15px;
 }
 
 /* Code Block */
@@ -751,28 +765,19 @@ footer {
 }
 
 /* Mobile Responsiveness */
-
 @media (max-width: 768px) {
 
     .bento-grid {
         grid-template-columns: 1fr;
     }
+
     
-    .project-hero, .wide-short, .project-feature {
-        grid-column: span 1;
-    }
-    
-    /* FIX: Scales down card heights so images look beautiful and proportional on a mobile screen */
     .project-feature {
         height: 300px;
     }
     
     .projects {
         height: 220px;
-    }
-
-    .brand-name {
-        font-size: 2.5rem;
     }
 
     .brand-name {
