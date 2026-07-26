@@ -771,6 +771,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .project-hero, 
+    .wide-short, 
+    .project-feature {
+        grid-column: 1;
+    }
+
     
     .project-feature {
         height: 300px;
