@@ -627,6 +627,7 @@ footer {
     line-height: 1.4;
     color: var(--text-main);
     margin-bottom: 0;
+    text-align: left;
 }
 
 .meta-subtext {
